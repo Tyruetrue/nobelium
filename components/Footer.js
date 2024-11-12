@@ -5,6 +5,8 @@ const Footer = ({ fullWidth }) => {
 
   const d = new Date()
   const y = d.getFullYear()
+  const Day=d.getDate()
+  const m=d.getMonth()
   const from = +BLOG.since
   return (
     <div
@@ -16,7 +18,7 @@ const Footer = ({ fullWidth }) => {
       <div className="my-4 text-sm leading-6">
         <div className="flex align-baseline justify-between flex-wrap">
           <p>
-            © {BLOG.author} {`2024.11.12 - ${y}`}
+            © {BLOG.author} {`2024.11.12 - ${y}.${m}.${Day}`}
           </p>
           <Vercel />
         </div>
