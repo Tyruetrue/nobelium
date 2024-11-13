@@ -9,10 +9,10 @@ export default {
     extend: {
       colors: {
         day: {
-          DEFAULT: config.lightBackground || '#ffffff'
+          DEFAULT: config.lightBackground || '#f7e6e6'
         },
         night: {
-          DEFAULT: config.darkBackground || '#111827'
+          DEFAULT: config.darkBackground || '#70145f'
         }
       },
       fontFamily: {
